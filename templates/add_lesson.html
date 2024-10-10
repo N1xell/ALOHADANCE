@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Додати урок</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Головна</a></li>
+            <li><a href="/lessons">Уроки</a></li>
+            <li><a href="/add_lesson">Додати Урок</a></li>
+        </ul>
+    </nav>
+
+    <h1>Додати новий урок</h1>
+    <form action="/add_lesson" method="post">
+        <label for="title">Назва уроку:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+        <label for="description">Опис уроку:</label><br>
+        <textarea id="description" name="description" required></textarea><br><br>
+        <button type="submit">Додати</button>
+    </form>
+</body>
+</html>
