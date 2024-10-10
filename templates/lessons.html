@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уроки</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Головна</a></li>
+            <li><a href="/lessons">Уроки</a></li>
+            <li><a href="/add_lesson">Додати Урок</a></li>
+        </ul>
+    </nav>
+
+    <h1>Список уроків</h1>
+    <ul>
+        {% for lesson in lessons %}
+            <li>{{ lesson[1] }}: {{ lesson[2] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
